@@ -34,17 +34,17 @@ TIP! We strongly suggest that you break down this task with the use of helper fu
  
 ## Accessors and mutators:
 
--isPuzzleSolvable() returns true if the puzzle is solvable, false otherwise. We suggest you keep track of this when solving the problem at construction, rather than solving the puzzle again each time this function is called.
--setSolvable() records the puzzle as being solvable.
--getPuzzleNumbers() returns the  2D pointer array representing the puzzle
--setPuzzleNumbers(int** puzzle) sets the  2D pointer array representing the puzzle to the value of the parameter 
+- isPuzzleSolvable() returns true if the puzzle is solvable, false otherwise. We suggest you keep track of this when solving the problem at construction, rather than solving the puzzle again each time this function is called.
+- setSolvable() records the puzzle as being solvable.
+- getPuzzleNumbers() returns the  2D pointer array representing the puzzle
+- setPuzzleNumbers(int** puzzle) sets the  2D pointer array representing the puzzle to the value of the parameter 
 
 ## Utility functions:
 
--returnNextEmpty() returns a Location object with the coordinates of the first 0 found in the 2D pointer array, meaning that it is an empty square in the sudoku board. To find the first empty square you must read the 2D array from top-left (0,0) to bottom right (8,8), one row at a time. Set the row and col of the Location to the indices at which the first 0 is found in the 2D array. If there are no empty squares the Location object should have row and col values of -1.
--checkLegalValue(int value, Sudoku::Location location) returns true if the value parameter (which can take on values 1-9) can legally be placed at the given location in the 2D array without breaking the rules of sudoku. It returns false if placing value at location is not a legal move. Remember, in order to be a valid move, the value must be unique with a row, column, and sub-grid.
+- returnNextEmpty() returns a Location object with the coordinates of the first 0 found in the 2D pointer array, meaning that it is an empty square in the sudoku board. To find the first empty square you must read the 2D array from top-left (0,0) to bottom right (8,8), one row at a time. Set the row and col of the Location to the indices at which the first 0 is found in the 2D array. If there are no empty squares the Location object should have row and col values of -1.
+- checkLegalValue(int value, Sudoku::Location location) returns true if the value parameter (which can take on values 1-9) can legally be placed at the given location in the 2D array without breaking the rules of sudoku. It returns false if placing value at location is not a legal move. Remember, in order to be a valid move, the value must be unique with a row, column, and sub-grid.
 Hint: to define the top-left corner of the sub-grid in which the location falls, integer division of the coordinates (row and col) by 3 will come in handy since all sub-grids are 3x3.
--display() will display the board as illustrated below: 
+- display() will display the board as illustrated below: 
 
 ## Solving the Puzzle:  
 
