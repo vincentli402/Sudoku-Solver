@@ -50,24 +50,6 @@ Utility functions:
 Hint: to define the top-left corner of the sub-grid in which the location falls, integer division of the coordinates (row and col) by 3 will come in handy since all sub-grids are 3x3.
 -display() will display the board as illustrated below: 
 
-Example:
-N X X  | N X N  | X X N
-N X N  | X N N  | X X X
-N X N  | N X X  | X X X
-- - - - - - - - - - - - 
-X N X  | N X N  | N X X
-X X X  | X N X  | X X X
-X X N  | N X N  | X N X
-- - - - - - - - - - - - 
-X X X  | X X N  | N X N
-X X X  | N N X  | N X N
-N X X  | N X N  | X X N
-N is an integer 1-9 (the function displays the actual integer not an N)
-X represents a blank box where there is a zero (the function displays the X not the zero)
-After every 3 numbers (columns), we have a " | " to separate sub-grids. Note that each " | " is preceded by two space characters and followed by a single space character.
-After every 3 rows, we have 12 dashes " - " to separate the sub-grids.  
-Note: the principle of Information Hiding would dictate that setSolvable(), getPuzzleNumbers(), setPuzzleNumbers(int** puzzle), returnNextEmpty() and checkLegalValue(int value, Sudoku::Location location) should be private. We require these to be public here for unit-testing purposes.
-
 
 Solving the Puzzle:  
 
